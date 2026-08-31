@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #FBF9F4;
+    --foreground: #1C1917;
+    --ivory: #FBF9F4;
+    --ivory-warm: #F4EFE6;
+    --ivory-surface: #FFFFFF;
+    --charcoal: #1C1917;
+    --charcoal-secondary: #2C2825;
+    --charcoal-muted: #57534E;
+    --stone-border: #E8E2D6;
+    --gold-accent: #B88E3E;
+    --gold-light: #F6F1E5;
+    --gold-hover: #9F792F;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif), Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom fine-jewelry utility styles */
+.gold-gradient-border {
+  border-color: #B88E3E;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #B88E3E 0%, #D4AF37 50%, #9F792F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtle-shadow {
+  box-shadow: 0 4px 20px -2px rgba(28, 25, 23, 0.05);
+}
+
+.subtle-shadow-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.subtle-shadow-hover:hover {
+  box-shadow: 0 12px 30px -4px rgba(28, 25, 23, 0.09);
+  transform: translateY(-2px);
+}
