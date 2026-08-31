@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import GemstoneCatalogClient from "./GemstoneCatalogClient";
+import GemstoneCatalogClient from "@/app/gemstones/GemstoneCatalogClient";
 
 export const metadata = {
   title: "All Gemstones | Bhatia Gems Catalog",

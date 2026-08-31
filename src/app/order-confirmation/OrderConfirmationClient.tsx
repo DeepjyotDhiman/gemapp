@@ -29,7 +29,7 @@ export default function OrderConfirmationClient() {
       order?.customer?.fullName ? ` under the name ${order.customer.fullName}` : ""
     }. Please confirm my order and share payment details.`
   );
-  const whatsappUrl = `https://wa.me/919876543210?text=${whatsappMessage}`;
+  const whatsappUrl = `https://wa.me/919106765594?text=${whatsappMessage}`;
 
   return (
     <div className="space-y-8">

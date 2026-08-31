@@ -90,7 +90,7 @@ export default function Navbar() {
 
             {/* WhatsApp Contact */}
             <a
-              href="https://wa.me/919876543210?text=Hello%20Bhati%20Gems,%20I%20would%20like%20to%20enquire%20about%20your%20natural%20gemstones."
+              href="https://wa.me/919106765594?text=Hello%20Bhatia%20Gems,%20I%20would%20like%20to%20enquire%20about%20your%20natural%20gemstones."
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full border border-[#B88E3E]/40 text-[#1C1917] bg-[#F4EFE6]/70 hover:bg-[#B88E3E] hover:text-white transition-all"
@@ -170,7 +170,7 @@ export default function Navbar() {
           </nav>
           <div className="pt-3 border-t border-[#E8E2D6]">
             <a
-              href="https://wa.me/919876543210?text=Hello%20Bhati%20Gems,%20I%20would%20like%20to%20enquire%20about%20your%20natural%20gemstones."
+              href="https://wa.me/919106765594?text=Hello%20Bhatia%20Gems,%20I%20would%20like%20to%20enquire%20about%20your%20natural%20gemstones."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-md bg-[#F4EFE6] border border-[#B88E3E]/30 text-[#1C1917] font-medium text-sm"

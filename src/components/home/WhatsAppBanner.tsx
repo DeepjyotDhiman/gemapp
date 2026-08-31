@@ -19,7 +19,7 @@ export default function WhatsAppBanner() {
           </div>
 
           <a
-            href="https://wa.me/919876543210?text=Hello%20Bhati%20Gems,%20I%20have%20a%20question%20about%20your%20gemstones."
+            href="https://wa.me/919106765594?text=Hello%20Bhatia%20Gems,%20I%20have%20a%20question%20about%20your%20gemstones."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-lg bg-[#25D366] hover:bg-[#1EBE5D] text-white text-sm font-semibold transition-all shadow-sm shrink-0"

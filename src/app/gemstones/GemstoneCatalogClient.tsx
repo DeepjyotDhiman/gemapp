@@ -431,7 +431,7 @@ export default function GemstoneCatalogClient() {
                   Reset All Filters
                 </button>
                 <a
-                  href="https://wa.me/919876543210?text=Hello%20Bhati%20Gems,%20I%20am%20looking%20for%20a%20specific%20gemstone%20not%20found%20in%20catalog."
+                  href="https://wa.me/919106765594?text=Hello%20Bhatia%20Gems,%20I%20am%20looking%20for%20a%20specific%20gemstone%20not%20found%20in%20catalog."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-5 py-2.5 bg-[#25D366] text-white text-xs font-semibold rounded hover:bg-[#1EBE5D] transition-colors"

@@ -104,15 +104,15 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#B88E3E] shrink-0" />
-                <span className="text-xs">[Phone Placeholder: +91 98765 43210]</span>
+                <span className="text-xs">[Phone Placeholder: +91 91067 65594]</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#B88E3E] shrink-0" />
-                <span className="text-xs">[Email Placeholder: contact@bhatiagems.com]</span>
+                <span className="text-xs">[Email Placeholder: dhiman.deepjyot2006@gmail.com]</span>
               </li>
               <li className="pt-2 flex items-center gap-4">
                 <a
-                  href="https://wa.me/919876543210?text=Hello%20Bhati%20Gems,%20I%20have%20an%20inquiry."
+                  href="https://wa.me/919106765594?text=Hello%20Bhatia%20Gems,%20I%20have%20an%20inquiry."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 text-xs text-[#25D366] hover:underline"

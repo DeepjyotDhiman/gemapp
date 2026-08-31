@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import OrderConfirmationClient from "./OrderConfirmationClient";
+import OrderConfirmationClient from "@/app/order-confirmation/OrderConfirmationClient";
 
 export const metadata = {
   title: "Order Request Confirmed | Bhatia Gems",

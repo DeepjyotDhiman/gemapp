@@ -39,7 +39,7 @@ export default function HeroSection() {
               </Link>
 
               <a
-                href="https://wa.me/919876543210?text=Hello%20Bhati%20Gems,%20I%20am%20exploring%20your%20gemstone%20collection%20and%20would%20like%20assistance."
+                href="https://wa.me/919106765594?text=Hello%20Bhatia%20Gems,%20I%20am%20exploring%20your%20gemstone%20collection%20and%20would%20like%20assistance."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-md bg-white border border-[#E8E2D6] text-[#1C1917] text-sm font-semibold hover:bg-[#FBF9F4] transition-all shadow-sm"

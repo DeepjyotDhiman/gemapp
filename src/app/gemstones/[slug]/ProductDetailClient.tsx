@@ -44,7 +44,7 @@ export default function ProductDetailClient({ gemstone }: ProductDetailClientPro
   const whatsappMessage = encodeURIComponent(
     `Hello Bhatia Gems, I am interested in ${gemstone.name}. Please share more details and availability.`
   );
-  const whatsappUrl = `https://wa.me/919876543210?text=${whatsappMessage}`;
+  const whatsappUrl = `https://wa.me/919106765594?text=${whatsappMessage}`;
 
   // Helper for displaying spec or mandatory "Information coming soon"
   const renderSpec = (val: string | undefined | null) => {

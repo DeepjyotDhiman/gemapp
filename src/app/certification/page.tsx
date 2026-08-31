@@ -107,7 +107,7 @@ export default function CertificationPage() {
           </div>
 
           <a
-            href="https://wa.me/919876543210?text=Hello%20Bhati%20Gems,%20I%20would%20like%20to%20request%20certificate%20details%20for%20a%20gemstone."
+            href="https://wa.me/919106765594?text=Hello%20Bhatia%20Gems,%20I%20would%20like%20to%20request%20certificate%20details%20for%20a%20gemstone."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#1C1917] hover:bg-[#B88E3E] text-white text-xs font-semibold rounded transition-colors shrink-0"
