@@ -21,9 +21,9 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Bhatia Gems | Natural Certified Gemstones",
+  title: "Bhati Gems | Natural Certified Gemstones",
   description: "Natural Gemstones, Chosen With Trust. Explore certified Rubies, Emeralds, Sapphires, Pearls, and fine gemstones with direct order requests and WhatsApp enquiries.",
-  keywords: ["gemstones", "natural gems", "Bhatia Gems", "Panna", "Neelam", "Pukhraj", "Manik", "certified gemstones India"],
+  keywords: ["gemstones", "natural gems", "Bhati Gems", "Panna", "Neelam", "Pukhraj", "Manik", "certified gemstones India"],
 };
 
 export default function RootLayout({
