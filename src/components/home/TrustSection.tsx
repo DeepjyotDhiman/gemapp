@@ -37,7 +37,7 @@ export default function TrustSection() {
             Our Commitment
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl font-medium text-[#1C1917] mt-2">
-            Why Inquire With Bhati Gems
+            Why Inquire With Bhatia Gems
           </h2>
           <p className="text-sm text-[#57534E] mt-2">
             Clear standards, straightforward communication, and personal care for every client.

@@ -40,9 +40,9 @@ export default function ProductDetailClient({ gemstone }: ProductDetailClientPro
   };
 
   // WhatsApp prefilled message as mandated:
-  // "Hello Bhati Gems, I am interested in [PRODUCT NAME]. Please share more details and availability."
+  // "Hello Bhatia Gems, I am interested in [PRODUCT NAME]. Please share more details and availability."
   const whatsappMessage = encodeURIComponent(
-    `Hello Bhati Gems, I am interested in ${gemstone.name}. Please share more details and availability.`
+    `Hello Bhatia Gems, I am interested in ${gemstone.name}. Please share more details and availability.`
   );
   const whatsappUrl = `https://wa.me/919876543210?text=${whatsappMessage}`;
 
@@ -241,7 +241,7 @@ export default function ProductDetailClient({ gemstone }: ProductDetailClientPro
             </div>
 
             <p className="text-[11px] text-[#78716C] text-center italic">
-              No online payment required. Orders submit an enquiry request directly to Bhati Gems.
+              No online payment required. Orders submit an enquiry request directly to Bhatia Gems.
             </p>
           </div>
 

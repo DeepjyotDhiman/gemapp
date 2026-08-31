@@ -3,8 +3,8 @@ import Link from "next/link";
 import { MessageCircle, ShieldCheck, Sparkles, Compass } from "lucide-react";
 
 export const metadata = {
-  title: "About Us | Bhati Gems",
-  description: "Learn about Bhati Gems, our commitment to natural unheated gemstones, individual testing credentials, and honest client service across India.",
+  title: "About Us | Bhatia Gems",
+  description: "Learn about Bhatia Gems, our commitment to natural unheated gemstones, individual testing credentials, and honest client service across India.",
 };
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
             Our Philosophy
           </span>
           <h1 className="font-serif text-3xl sm:text-5xl font-medium text-[#1C1917]">
-            About Bhati Gems
+            About Bhatia Gems
           </h1>
           <p className="text-sm sm:text-base text-[#57534E] max-w-2xl mx-auto leading-relaxed">
             A dedicated gemstone house committed to natural minerals, authentic cuts, and straightforward personal consultation.
@@ -31,7 +31,7 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-4 text-sm text-[#57534E] leading-relaxed">
             <p>
-              Gemstones carry timeless beauty and cultural reverence in India. At <strong>Bhati Gems</strong>, we focus on presenting natural stones with total transparency. We believe every customer deserves clear information regarding the exact weight, dimensions, origin, and enhancement status of each stone before making a decision.
+              Gemstones carry timeless beauty and cultural reverence in India. At <strong>Bhatia Gems</strong>, we focus on presenting natural stones with total transparency. We believe every customer deserves clear information regarding the exact weight, dimensions, origin, and enhancement status of each stone before making a decision.
             </p>
             <p>
               Whether you are seeking an astrological stone such as a Ceylon Blue Sapphire (Neelam) or Pukhraj, or a fine jewel for custom setting, our goal is to eliminate ambiguity. We refrain from exaggerated marketing narratives and instead emphasize verifiable gemological documentation.
@@ -87,7 +87,7 @@ export default function AboutPage() {
             ✦ Phase 1 Platform Notice:
           </p>
           <p>
-            Detailed historical milestones, founder bio, and registered premises addresses will be updated as verified by Bhati Gems leadership.
+            Detailed historical milestones, founder bio, and registered premises addresses will be updated as verified by Bhatia Gems leadership.
           </p>
         </div>
 

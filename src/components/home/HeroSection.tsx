@@ -15,7 +15,7 @@ export default function HeroSection() {
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAE3D2] border border-[#B88E3E]/30 text-xs font-semibold tracking-wider uppercase text-[#57534E]">
               <span className="text-[#B88E3E]">✦</span>
-              <span>Bhati Gems • Certified Natural Gemstones</span>
+              <span>Bhatia Gems • Certified Natural Gemstones</span>
             </div>
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-[#1C1917] leading-[1.15]">
@@ -26,7 +26,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-base sm:text-lg text-[#57534E] leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
-              Explore carefully selected gemstones from Bhati Gems. Discover detailed information about each stone and enquire with confidence.
+              Explore carefully selected gemstones from Bhatia Gems. Discover detailed information about each stone and enquire with confidence.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
@@ -76,7 +76,7 @@ export default function HeroSection() {
                 <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-[#F4EFE6]">
                   <Image
                     src="/images/gemstones/ruby.jpg"
-                    alt="Featured Natural Ruby at Bhati Gems"
+                    alt="Featured Natural Ruby at Bhatia Gems"
                     fill
                     priority
                     className="object-cover"

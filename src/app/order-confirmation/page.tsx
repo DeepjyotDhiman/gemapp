@@ -2,8 +2,8 @@ import React, { Suspense } from "react";
 import OrderConfirmationClient from "./OrderConfirmationClient";
 
 export const metadata = {
-  title: "Order Request Confirmed | Bhati Gems",
-  description: "Thank you for your order request with Bhati Gems. Our team will contact you shortly to confirm your order and payment arrangements.",
+  title: "Order Request Confirmed | Bhatia Gems",
+  description: "Thank you for your order request with Bhatia Gems. Our team will contact you shortly to confirm your order and payment arrangements.",
 };
 
 export default function OrderConfirmationPage() {

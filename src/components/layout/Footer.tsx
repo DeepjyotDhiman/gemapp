@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <span className="text-[#B88E3E] font-serif text-xl">✦</span>
               <span className="font-serif text-2xl tracking-wider text-white">
-                BHATI GEMS
+                BHATIA GEMS
               </span>
             </div>
             <p className="text-sm text-[#A8A29E] leading-relaxed max-w-sm">
@@ -69,7 +69,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm text-[#A8A29E]">
               <li>
                 <Link href="/about" className="hover:text-[#B88E3E] transition-colors">
-                  About Bhati Gems
+                  About Bhatia Gems
                 </Link>
               </li>
               <li>
@@ -108,7 +108,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#B88E3E] shrink-0" />
-                <span className="text-xs">[Email Placeholder: contact@bhatigems.com]</span>
+                <span className="text-xs">[Email Placeholder: contact@bhatiagems.com]</span>
               </li>
               <li className="pt-2 flex items-center gap-4">
                 <a
@@ -127,7 +127,7 @@ export default function Footer() {
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
                   </svg>
-                  <span>@bhatigems [Placeholder]</span>
+                  <span>@bhatiagems [Placeholder]</span>
                 </span>
               </li>
             </ul>
@@ -139,9 +139,9 @@ export default function Footer() {
       <div className="border-t border-[#2A2623] bg-[#141210] py-6 text-xs text-[#78716C]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-center sm:text-left">
-            <p>© {new Date().getFullYear()} Bhati Gems. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Bhatia Gems. All rights reserved.</p>
             <p className="text-[11px] text-[#57534E] mt-0.5">
-              Phase 1 notice: Business details and phone numbers are temporary placeholders until confirmed by Bhati Gems. Orders placed are non-binding requests.
+              Phase 1 notice: Business details and phone numbers are temporary placeholders until confirmed by Bhatia Gems. Orders placed are non-binding requests.
             </p>
           </div>
           <div className="flex items-center space-x-6 text-xs text-[#A8A29E]">

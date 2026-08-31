@@ -20,12 +20,12 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   if (!gemstone) {
     return {
-      title: "Gemstone Not Found | Bhati Gems",
+      title: "Gemstone Not Found | Bhatia Gems",
     };
   }
 
   return {
-    title: `${gemstone.name} (${gemstone.weight}) | Bhati Gems`,
+    title: `${gemstone.name} (${gemstone.weight}) | Bhatia Gems`,
     description: gemstone.description,
   };
 }

@@ -25,7 +25,7 @@ export default function OrderConfirmationClient() {
     : "";
 
   const whatsappMessage = encodeURIComponent(
-    `Hello Bhati Gems, I have submitted order request ${displayOrderId}${
+    `Hello Bhatia Gems, I have submitted order request ${displayOrderId}${
       order?.customer?.fullName ? ` under the name ${order.customer.fullName}` : ""
     }. Please confirm my order and share payment details.`
   );
@@ -74,7 +74,7 @@ export default function OrderConfirmationClient() {
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md bg-[#25D366] hover:bg-[#1EBE5D] text-white text-sm font-semibold transition-all shadow-sm"
           >
             <MessageCircle className="w-4 h-4 fill-white text-transparent" />
-            <span>WhatsApp Bhati Gems</span>
+            <span>WhatsApp Bhatia Gems</span>
           </a>
         </div>
       </div>

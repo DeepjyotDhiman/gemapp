@@ -346,7 +346,7 @@ export default function CheckoutPage() {
                   <span>Important Payment Notice</span>
                 </div>
                 <p className="text-sm font-medium text-[#1C1917]">
-                  &ldquo;Payment will be arranged with Bhati Gems after your order is confirmed.&rdquo;
+                  &ldquo;Payment will be arranged with Bhatia Gems after your order is confirmed.&rdquo;
                 </p>
                 <p className="text-[#57534E] text-[11px] leading-relaxed">
                   We will contact you via WhatsApp and phone to confirm availability, provide high-resolution certification scans, and share official bank settlement details.

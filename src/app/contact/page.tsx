@@ -28,7 +28,7 @@ export default function ContactPage() {
             Direct Inquiries
           </span>
           <h1 className="font-serif text-3xl sm:text-5xl font-medium text-[#1C1917]">
-            Contact Bhati Gems
+            Contact Bhatia Gems
           </h1>
           <p className="text-sm sm:text-base text-[#57534E] max-w-2xl mx-auto leading-relaxed">
             Have a question about a specific gemstone, custom ring/pendant mounting, or certification details? We are here to assist you.
@@ -96,7 +96,7 @@ export default function ContactPage() {
                   <Mail className="w-4 h-4 text-[#B88E3E] shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-[#1C1917] block">Email Inquiries</span>
-                    <span>contact@bhatigems.com [Placeholder]</span>
+                    <span>contact@bhatiagems.com [Placeholder]</span>
                   </div>
                 </li>
               </ul>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                     Inquiry Received
                   </h3>
                   <p className="text-xs text-[#57534E] max-w-sm mx-auto leading-relaxed">
-                    Thank you for reaching out to Bhati Gems. Our specialist will respond via WhatsApp or phone shortly.
+                    Thank you for reaching out to Bhatia Gems. Our specialist will respond via WhatsApp or phone shortly.
                   </p>
                   <button
                     type="button"

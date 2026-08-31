@@ -11,7 +11,7 @@ interface OrderContextType {
 
 const OrderContext = createContext<OrderContextType | undefined>(undefined);
 
-const ORDERS_STORAGE_KEY = "bhati_gems_orders_v1";
+const ORDERS_STORAGE_KEY = "bhatia_gems_orders_v1";
 
 export function OrderProvider({ children }: { children: React.ReactNode }) {
   const [orders, setOrders] = useState<OrderRequest[]>([]);

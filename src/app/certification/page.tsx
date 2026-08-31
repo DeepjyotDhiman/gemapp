@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Award, FileCheck2, Search, CheckCircle, MessageCircle } from "lucide-react";
 
 export const metadata = {
-  title: "Certification & Authenticity | Bhati Gems",
-  description: "Learn how Bhati Gems verifies natural gemstones. Transparent lab reports, treatment disclosure, and testing standards.",
+  title: "Certification & Authenticity | Bhatia Gems",
+  description: "Learn how Bhatia Gems verifies natural gemstones. Transparent lab reports, treatment disclosure, and testing standards.",
 };
 
 export default function CertificationPage() {
@@ -56,7 +56,7 @@ export default function CertificationPage() {
 
           <div className="space-y-4 text-sm text-[#57534E] leading-relaxed">
             <p>
-              In the gemstone industry, trust is built on objective scientific testing rather than mere spoken assurances. At <strong>Bhati Gems</strong>, every listed gemstone comes with laboratory identification credentials from recognized gem testing laboratories.
+              In the gemstone industry, trust is built on objective scientific testing rather than mere spoken assurances. At <strong>Bhatia Gems</strong>, every listed gemstone comes with laboratory identification credentials from recognized gem testing laboratories.
             </p>
             <p>
               When you submit an order request, our team provides you with high-resolution digital scans and photos of the corresponding lab certificate, allowing you to independently inspect the findings before confirming your order.

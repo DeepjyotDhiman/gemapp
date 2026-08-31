@@ -47,7 +47,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="font-serif text-2xl sm:text-3xl font-semibold tracking-wider text-[#1C1917]">
-                BHATI GEMS
+                BHATIA GEMS
               </span>
               <span className="text-[10px] tracking-[0.25em] text-[#57534E] -mt-1 font-sans uppercase">
                 Fine Natural Stones

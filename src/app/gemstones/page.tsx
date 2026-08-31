@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import GemstoneCatalogClient from "./GemstoneCatalogClient";
 
 export const metadata = {
-  title: "All Gemstones | Bhati Gems Catalog",
+  title: "All Gemstones | Bhatia Gems Catalog",
   description: "Browse certified natural rubies, emeralds, sapphires, pearls, corals, and rare gemstones. Filter by category, price, and availability.",
 };
 

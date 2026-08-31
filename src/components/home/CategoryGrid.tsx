@@ -30,7 +30,7 @@ export default function CategoryGrid() {
             <div className="relative aspect-square w-full overflow-hidden bg-[#F4EFE6]">
               <Image
                 src={cat.image}
-                alt={`${cat.name} (${cat.hindiName}) at Bhati Gems`}
+                alt={`${cat.name} (${cat.hindiName}) at Bhatia Gems`}
                 fill
                 sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                 className="object-cover group-hover:scale-108 transition-transform duration-500"
