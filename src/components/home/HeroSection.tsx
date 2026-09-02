@@ -8,41 +8,56 @@ import { getImagePath } from "@/utils/image";
 
 const HERO_SLIDES = [
   {
-    id: "slide-ruby",
+    id: "slide-1",
     title: "Natural Gemstones,",
     titleHighlight: "Chosen With Trust.",
     subtitle: "Explore carefully selected natural gemstones from Bhatia Gems with laboratory test documentation and transparent specifications.",
-    image: "/images/gemstones/ruby.jpg",
+    bgImage: "/images/hero/hero-1.jpg",
+    cardImage: "/images/gemstones/ruby.jpg",
     specimenName: "Natural Unheated Ruby",
     specimenSub: "4.25 Carats • Vivid Crimson Life",
     link: "/gemstones/natural-pigeon-blood-ruby-4-25ct",
   },
   {
-    id: "slide-emerald",
-    title: "Lustrous Zambian",
-    titleHighlight: "Emerald Specimens.",
-    subtitle: "Discover distinct octagonal step-cut emeralds exhibiting characteristic natural jardin crystal formations.",
-    image: "/images/gemstones/emerald.jpg",
-    specimenName: "Zambian Emerald (Panna)",
-    specimenSub: "5.10 Carats • Deep Luminous Green",
-    link: "/gemstones/natural-octagonal-zambian-emerald-5-10ct",
-  },
-  {
-    id: "slide-blue-sapphire",
+    id: "slide-2",
     title: "Unheated Ceylon",
     titleHighlight: "Royal Blue Sapphires.",
     subtitle: "Authentic Sri Lankan corundum gems featuring deep royal cornflower hue and high crystal clarity.",
-    image: "/images/gemstones/blue-sapphire.jpg",
+    bgImage: "/images/hero/hero-2.jpg",
+    cardImage: "/images/gemstones/blue-sapphire.jpg",
     specimenName: "Ceylon Blue Sapphire (Neelam)",
     specimenSub: "3.45 Carats • Untreated Royal Blue",
     link: "/gemstones/ceylon-natural-royal-blue-sapphire-3-45ct",
   },
   {
-    id: "slide-yellow-sapphire",
-    title: "Luminous Canary",
-    titleHighlight: "Yellow Sapphires.",
-    subtitle: "Bright golden yellow sapphires with exceptional brilliance, perfect for fine jewelry and heritage collections.",
-    image: "/images/gemstones/yellow-sapphire.jpg",
+    id: "slide-3",
+    title: "Lustrous Zambian",
+    titleHighlight: "Emerald Specimens.",
+    subtitle: "Discover distinct octagonal step-cut emeralds exhibiting characteristic natural jardin crystal formations.",
+    bgImage: "/images/hero/hero-3.jpg",
+    cardImage: "/images/gemstones/emerald.jpg",
+    specimenName: "Zambian Emerald (Panna)",
+    specimenSub: "5.10 Carats • Deep Luminous Green",
+    link: "/gemstones/natural-octagonal-zambian-emerald-5-10ct",
+  },
+  {
+    id: "slide-4",
+    title: "Authentic Sacred",
+    titleHighlight: "Rudraksha Beads.",
+    subtitle: "Explore authentic 1 to 14 Mukhi beads, Rosary Malas, Bracelets, and accessories with verified physical features.",
+    bgImage: "/images/hero/hero-4.jpg",
+    cardImage: "/images/rudraksha/mala.jpg",
+    specimenName: "5 Mukhi Natural Mala",
+    specimenSub: "108 Beads • Traditional Rosary",
+    link: "/rudraksha",
+  },
+  {
+    id: "slide-5",
+    title: "Fine Gemstones &",
+    titleHighlight: "Sacred Collection.",
+    subtitle: "Curated collection of natural gemstones and Rudraksha with direct WhatsApp assistance and nationwide delivery.",
+    bgImage: "/images/hero/hero-5.jpg",
+    cardImage: "/images/gemstones/yellow-sapphire.jpg",
     specimenName: "Yellow Sapphire (Pukhraj)",
     specimenSub: "6.20 Carats • Golden Lemon Saturation",
     link: "/gemstones/natural-yellow-sapphire-pukhraj-6-20ct",
@@ -101,7 +116,7 @@ export default function HeroSection() {
           }`}
         >
           <Image
-            src={getImagePath(slide.image)}
+            src={getImagePath(slide.bgImage)}
             alt={slide.specimenName}
             fill
             priority={idx === 0}
@@ -174,7 +189,7 @@ export default function HeroSection() {
               <div className="relative rounded-xl overflow-hidden bg-[#2C2825]/90 border border-[#B88E3E]/30 p-3 shadow-2xl backdrop-blur-md">
                 <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-[#1C1917]">
                   <Image
-                    src={getImagePath(activeSlide.image)}
+                    src={getImagePath(activeSlide.cardImage)}
                     alt={activeSlide.specimenName}
                     fill
                     className="object-cover transition-all duration-700 hover:scale-105"

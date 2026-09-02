@@ -64,7 +64,7 @@ export default function CategoryGrid() {
             className="group relative rounded-xl overflow-hidden min-h-[340px] sm:min-h-[380px] flex flex-col justify-end p-8 border border-[#E8E2D6] subtle-shadow subtle-shadow-hover"
           >
             <Image
-              src={getImagePath("/images/gemstones/cats-eye.jpg")}
+              src={getImagePath("/images/rudraksha/mala.jpg")}
               alt="Authentic Rudraksha Beads Collection"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700"
