@@ -39,6 +39,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/rudraksha" className="hover:text-[#B88E3E] transition-colors">
+                  Sacred Rudraksha
+                </Link>
+              </li>
+              <li>
                 <Link href="/gemstones?category=Ruby" className="hover:text-[#B88E3E] transition-colors">
                   Rubies (Manik)
                 </Link>

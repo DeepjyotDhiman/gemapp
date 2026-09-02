@@ -6,7 +6,25 @@ export type GemstoneCategory =
   | "Pearl"
   | "Red Coral"
   | "Hessonite"
-  | "Cat's Eye";
+  | "Cat's Eye"
+  | "Amethyst"
+  | "Garnet"
+  | "Opal"
+  | "Peridot"
+  | "Aquamarine"
+  | "Citrine"
+  | "Moonstone"
+  | "Tourmaline"
+  | "Topaz"
+  | "Iolite"
+  | "Zircon"
+  | "Tanzanite"
+  | "Labradorite"
+  | "Lapis Lazuli"
+  | "Turquoise"
+  | "Onyx"
+  | "Morganite"
+  | string;
 
 export type AvailabilityStatus = "in_stock" | "on_request";
 

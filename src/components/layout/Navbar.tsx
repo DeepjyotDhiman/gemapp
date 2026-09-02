@@ -17,6 +17,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Gemstones", href: "/gemstones" },
+    { name: "Rudraksha", href: "/rudraksha" },
     { name: "About", href: "/about" },
     { name: "Certification", href: "/certification" },
     { name: "Contact", href: "/contact" },
