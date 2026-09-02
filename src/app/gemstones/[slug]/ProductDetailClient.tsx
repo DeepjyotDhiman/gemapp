@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Gemstone } from "@/types/gemstone";
 import { useCart } from "@/context/CartContext";
+import { getImagePath } from "@/utils/image";
 import { 
   ShoppingBag, 
   MessageCircle, 
@@ -89,7 +90,7 @@ export default function ProductDetailClient({ gemstone }: ProductDetailClientPro
           {/* Main Large Image */}
           <div className="relative aspect-square w-full rounded-xl overflow-hidden bg-[#F4EFE6] border border-[#E8E2D6] subtle-shadow">
             <Image
-              src={selectedImage}
+              src={getImagePath(selectedImage)}
               alt={gemstone.name}
               fill
               priority
@@ -127,7 +128,7 @@ export default function ProductDetailClient({ gemstone }: ProductDetailClientPro
                   }`}
                 >
                   <Image
-                    src={img}
+                    src={getImagePath(img)}
                     alt={`${gemstone.name} view ${i + 1}`}
                     fill
                     className="object-cover"

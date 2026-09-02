@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useOrders } from "@/context/OrderContext";
 import { CheckCircle2, MessageCircle, ArrowRight, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { getImagePath } from "@/utils/image";
 
 export default function OrderConfirmationClient() {
   const searchParams = useSearchParams();
@@ -150,7 +151,7 @@ export default function OrderConfirmationClient() {
                     <div className="flex items-center gap-3">
                       <div className="relative w-12 h-12 rounded overflow-hidden bg-[#F4EFE6] shrink-0 border border-[#E8E2D6]">
                         <Image
-                          src={item.gemstone.images[0]}
+                          src={getImagePath(item.gemstone.images[0])}
                           alt={item.gemstone.name}
                           fill
                           className="object-cover"

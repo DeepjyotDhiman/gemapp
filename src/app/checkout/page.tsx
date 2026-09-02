@@ -8,6 +8,7 @@ import { useCart } from "@/context/CartContext";
 import { useOrders } from "@/context/OrderContext";
 import { OrderCustomerInfo } from "@/types/gemstone";
 import { ShieldCheck, ArrowLeft, Send, AlertCircle } from "lucide-react";
+import { getImagePath } from "@/utils/image";
 
 export default function CheckoutPage() {
   const router = useRouter();
@@ -386,7 +387,7 @@ export default function CheckoutPage() {
                     <div key={item.gemstone.id} className="py-3 flex items-center gap-3">
                       <div className="relative w-12 h-12 rounded overflow-hidden bg-[#F4EFE6] shrink-0 border border-[#E8E2D6]">
                         <Image
-                          src={item.gemstone.images[0]}
+                          src={getImagePath(item.gemstone.images[0])}
                           alt={item.gemstone.name}
                           fill
                           className="object-cover"

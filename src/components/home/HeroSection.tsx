@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MessageCircle, ArrowRight, Shield } from "lucide-react";
+import { getImagePath } from "@/utils/image";
 
 export default function HeroSection() {
   return (
@@ -75,7 +76,7 @@ export default function HeroSection() {
               <div className="relative rounded-xl overflow-hidden bg-white border border-[#E8E2D6] subtle-shadow p-3">
                 <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-[#F4EFE6]">
                   <Image
-                    src="/images/gemstones/ruby.jpg"
+                    src={getImagePath("/images/gemstones/ruby.jpg")}
                     alt="Featured Natural Ruby at Bhatia Gems"
                     fill
                     priority

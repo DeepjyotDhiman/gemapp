@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Gemstone } from "@/types/gemstone";
 import { useCart } from "@/context/CartContext";
 import { Check, ShoppingBag, Eye } from "lucide-react";
+import { getImagePath } from "@/utils/image";
 
 interface GemstoneCardProps {
   gemstone: Gemstone;
@@ -34,7 +35,7 @@ export default function GemstoneCard({ gemstone }: GemstoneCardProps) {
       {/* Image Container */}
       <Link href={`/gemstones/${gemstone.slug}`} className="relative aspect-square overflow-hidden bg-[#F4EFE6] block">
         <Image
-          src={gemstone.images[0]}
+          src={getImagePath(gemstone.images[0])}
           alt={gemstone.name}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

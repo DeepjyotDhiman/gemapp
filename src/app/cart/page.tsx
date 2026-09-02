@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useCart } from "@/context/CartContext";
 import { Trash2, Plus, Minus, ArrowLeft, ArrowRight, ShieldCheck, ShoppingBag } from "lucide-react";
+import { getImagePath } from "@/utils/image";
 
 export default function CartPage() {
   const { cart, updateQuantity, removeFromCart, subtotal, totalItems } = useCart();
@@ -86,7 +87,7 @@ export default function CartPage() {
                       className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-md overflow-hidden bg-[#F4EFE6] shrink-0 border border-[#E8E2D6]"
                     >
                       <Image
-                        src={item.gemstone.images[0]}
+                        src={getImagePath(item.gemstone.images[0])}
                         alt={item.gemstone.name}
                         fill
                         className="object-cover"

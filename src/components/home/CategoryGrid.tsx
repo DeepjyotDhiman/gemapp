@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { CATEGORIES } from "@/data/gemstones";
 import { ArrowUpRight } from "lucide-react";
+import { getImagePath } from "@/utils/image";
 
 export default function CategoryGrid() {
   return (
@@ -29,7 +30,7 @@ export default function CategoryGrid() {
             {/* Image */}
             <div className="relative aspect-square w-full overflow-hidden bg-[#F4EFE6]">
               <Image
-                src={cat.image}
+                src={getImagePath(cat.image)}
                 alt={`${cat.name} (${cat.hindiName}) at Bhatia Gems`}
                 fill
                 sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
