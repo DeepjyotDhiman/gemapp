@@ -89,6 +89,7 @@ export default function FeaturedCarousel({ gemstones }: FeaturedCarouselProps) {
                     alt={gemstone.name}
                     fill
                     sizes="320px"
+                    loading="lazy"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-3 right-3">

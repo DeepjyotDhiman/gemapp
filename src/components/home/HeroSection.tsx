@@ -12,8 +12,8 @@ const HERO_SLIDES = [
     title: "Natural Gemstones,",
     titleHighlight: "Chosen With Trust.",
     subtitle: "Explore carefully selected natural gemstones from Bhatia Gems with laboratory test documentation and transparent specifications.",
-    bgImage: "/images/hero/hero-1.jpg",
-    cardImage: "/images/gemstones/ruby.jpg",
+    bgImage: "/images/hero/hero-1.webp",
+    cardImage: "/images/gemstones/ruby.webp",
     specimenName: "Natural Unheated Ruby",
     specimenSub: "4.25 Carats • Vivid Crimson Life",
     link: "/gemstones/natural-pigeon-blood-ruby-4-25ct",
@@ -23,8 +23,8 @@ const HERO_SLIDES = [
     title: "Unheated Ceylon",
     titleHighlight: "Royal Blue Sapphires.",
     subtitle: "Authentic Sri Lankan corundum gems featuring deep royal cornflower hue and high crystal clarity.",
-    bgImage: "/images/hero/hero-2.jpg",
-    cardImage: "/images/gemstones/blue-sapphire.jpg",
+    bgImage: "/images/hero/hero-2.webp",
+    cardImage: "/images/gemstones/blue-sapphire.webp",
     specimenName: "Ceylon Blue Sapphire (Neelam)",
     specimenSub: "3.45 Carats • Untreated Royal Blue",
     link: "/gemstones/ceylon-natural-royal-blue-sapphire-3-45ct",
@@ -34,8 +34,8 @@ const HERO_SLIDES = [
     title: "Lustrous Zambian",
     titleHighlight: "Emerald Specimens.",
     subtitle: "Discover distinct octagonal step-cut emeralds exhibiting characteristic natural jardin crystal formations.",
-    bgImage: "/images/hero/hero-3.jpg",
-    cardImage: "/images/gemstones/emerald.jpg",
+    bgImage: "/images/hero/hero-3.webp",
+    cardImage: "/images/gemstones/emerald.webp",
     specimenName: "Zambian Emerald (Panna)",
     specimenSub: "5.10 Carats • Deep Luminous Green",
     link: "/gemstones/natural-octagonal-zambian-emerald-5-10ct",
@@ -45,8 +45,8 @@ const HERO_SLIDES = [
     title: "Authentic Sacred",
     titleHighlight: "Rudraksha Beads.",
     subtitle: "Explore authentic 1 to 14 Mukhi beads, Rosary Malas, Bracelets, and accessories with verified physical features.",
-    bgImage: "/images/hero/hero-4.jpg",
-    cardImage: "/images/rudraksha/mala.jpg",
+    bgImage: "/images/hero/hero-4.webp",
+    cardImage: "/images/rudraksha/mala.webp",
     specimenName: "5 Mukhi Natural Mala",
     specimenSub: "108 Beads • Traditional Rosary",
     link: "/rudraksha",
@@ -56,8 +56,8 @@ const HERO_SLIDES = [
     title: "Fine Gemstones &",
     titleHighlight: "Sacred Collection.",
     subtitle: "Curated collection of natural gemstones and Rudraksha with direct WhatsApp assistance and nationwide delivery.",
-    bgImage: "/images/hero/hero-5.jpg",
-    cardImage: "/images/gemstones/yellow-sapphire.jpg",
+    bgImage: "/images/hero/hero-5.webp",
+    cardImage: "/images/gemstones/yellow-sapphire.webp",
     specimenName: "Yellow Sapphire (Pukhraj)",
     specimenSub: "6.20 Carats • Golden Lemon Saturation",
     link: "/gemstones/natural-yellow-sapphire-pukhraj-6-20ct",
@@ -66,8 +66,13 @@ const HERO_SLIDES = [
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [loadedSlides, setLoadedSlides] = useState<number[]>([0]);
   const [isPaused, setIsPaused] = useState(false);
   const touchStartX = useRef<number | null>(null);
+
+  useEffect(() => {
+    setLoadedSlides((prev) => (prev.includes(currentSlide) ? prev : [...prev, currentSlide]));
+  }, [currentSlide]);
 
   useEffect(() => {
     if (isPaused) return;
@@ -107,23 +112,30 @@ export default function HeroSection() {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Background Image Carousel with Overlay */}
-      {HERO_SLIDES.map((slide, idx) => (
-        <div
-          key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            idx === currentSlide ? "opacity-40 scale-105 transition-transform duration-[8000ms]" : "opacity-0 pointer-events-none"
-          }`}
-        >
-          <Image
-            src={getImagePath(slide.bgImage)}
-            alt={slide.specimenName}
-            fill
-            priority={idx === 0}
-            className="object-cover object-center filter blur-[1px]"
-          />
-        </div>
-      ))}
+      {/* Background Image Carousel with Overlay - only render loaded slides */}
+      {HERO_SLIDES.map((slide, idx) => {
+        const shouldRender = loadedSlides.includes(idx);
+        return (
+          <div
+            key={slide.id}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              idx === currentSlide ? "opacity-40 scale-105 transition-transform duration-[8000ms]" : "opacity-0 pointer-events-none"
+            }`}
+          >
+            {shouldRender && (
+              <Image
+                src={getImagePath(slide.bgImage)}
+                alt={slide.specimenName}
+                fill
+                sizes="100vw"
+                priority={idx === 0}
+                loading={idx === 0 ? "eager" : "lazy"}
+                className="object-cover object-center filter blur-[1px]"
+              />
+            )}
+          </div>
+        );
+      })}
 
       {/* Dark gradient overlay for text readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#1C1917]/95 via-[#1C1917]/80 to-[#1C1917]/60" />
@@ -192,6 +204,9 @@ export default function HeroSection() {
                     src={getImagePath(activeSlide.cardImage)}
                     alt={activeSlide.specimenName}
                     fill
+                    sizes="(max-width: 768px) 100vw, 450px"
+                    priority={currentSlide === 0}
+                    loading={currentSlide === 0 ? "eager" : "lazy"}
                     className="object-cover transition-all duration-700 hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />

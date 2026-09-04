@@ -31,9 +31,11 @@ export default function CategoryGrid() {
             className="group relative rounded-xl overflow-hidden min-h-[340px] sm:min-h-[380px] flex flex-col justify-end p-8 border border-[#E8E2D6] subtle-shadow subtle-shadow-hover"
           >
             <Image
-              src={getImagePath("/images/gemstones/ruby.jpg")}
+              src={getImagePath("/images/gemstones/ruby.webp")}
               alt="Natural Certified Gemstones Collection"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
               className="object-cover group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1C1917] via-[#1C1917]/70 to-transparent" />
@@ -64,9 +66,11 @@ export default function CategoryGrid() {
             className="group relative rounded-xl overflow-hidden min-h-[340px] sm:min-h-[380px] flex flex-col justify-end p-8 border border-[#E8E2D6] subtle-shadow subtle-shadow-hover"
           >
             <Image
-              src={getImagePath("/images/rudraksha/mala.jpg")}
+              src={getImagePath("/images/rudraksha/mala.webp")}
               alt="Authentic Rudraksha Beads Collection"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
               className="object-cover group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#2C2825] via-[#2C2825]/75 to-transparent" />
@@ -119,6 +123,8 @@ export default function CategoryGrid() {
                     src={getImagePath(cat.image)}
                     alt={cat.name}
                     fill
+                    sizes="48px"
+                    loading="lazy"
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>

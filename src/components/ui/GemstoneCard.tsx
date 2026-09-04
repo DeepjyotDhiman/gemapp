@@ -24,11 +24,13 @@ export default function GemstoneCard({ gemstone }: GemstoneCardProps) {
     setTimeout(() => setAdded(false), 2000);
   };
 
-  const formattedPrice = new Intl.NumberFormat("en-IN", {
-    style: "currency",
-    currency: "INR",
-    maximumFractionDigits: 0,
-  }).format(gemstone.price);
+  const formattedPrice = gemstone.price && gemstone.price > 0
+    ? new Intl.NumberFormat("en-IN", {
+        style: "currency",
+        currency: "INR",
+        maximumFractionDigits: 0,
+      }).format(gemstone.price)
+    : "Price on Enquiry";
 
   return (
     <div className="group bg-white rounded-lg border border-[#E8E2D6] overflow-hidden flex flex-col subtle-shadow subtle-shadow-hover transition-all duration-300">
@@ -39,6 +41,7 @@ export default function GemstoneCard({ gemstone }: GemstoneCardProps) {
           alt={gemstone.name}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          loading="lazy"
           className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
         />
 

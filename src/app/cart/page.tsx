@@ -64,17 +64,21 @@ export default function CartPage() {
           <div className="lg:col-span-8 space-y-4">
             <div className="bg-white rounded-lg border border-[#E8E2D6] divide-y divide-[#F4EFE6] subtle-shadow overflow-hidden">
               {cart.map((item) => {
-                const itemTotal = item.gemstone.price * item.quantity;
-                const formattedItemPrice = new Intl.NumberFormat("en-IN", {
-                  style: "currency",
-                  currency: "INR",
-                  maximumFractionDigits: 0,
-                }).format(item.gemstone.price);
-                const formattedItemTotal = new Intl.NumberFormat("en-IN", {
-                  style: "currency",
-                  currency: "INR",
-                  maximumFractionDigits: 0,
-                }).format(itemTotal);
+                const itemTotal = (item.gemstone.price || 0) * item.quantity;
+                const formattedItemPrice = item.gemstone.price && item.gemstone.price > 0
+                  ? new Intl.NumberFormat("en-IN", {
+                      style: "currency",
+                      currency: "INR",
+                      maximumFractionDigits: 0,
+                    }).format(item.gemstone.price)
+                  : "Price on Enquiry";
+                const formattedItemTotal = item.gemstone.price && item.gemstone.price > 0
+                  ? new Intl.NumberFormat("en-IN", {
+                      style: "currency",
+                      currency: "INR",
+                      maximumFractionDigits: 0,
+                    }).format(itemTotal)
+                  : "Price on Enquiry";
 
                 return (
                   <div
@@ -90,6 +94,8 @@ export default function CartPage() {
                         src={getImagePath(item.gemstone.images[0])}
                         alt={item.gemstone.name}
                         fill
+                        sizes="96px"
+                        loading="lazy"
                         className="object-cover"
                       />
                     </Link>

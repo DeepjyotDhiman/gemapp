@@ -28,11 +28,13 @@ export default function ProductDetailClient({ gemstone }: ProductDetailClientPro
   const [quantity, setQuantity] = useState<number>(1);
   const [isAdded, setIsAdded] = useState<boolean>(false);
 
-  const formattedPrice = new Intl.NumberFormat("en-IN", {
-    style: "currency",
-    currency: "INR",
-    maximumFractionDigits: 0,
-  }).format(gemstone.price);
+  const formattedPrice = gemstone.price && gemstone.price > 0
+    ? new Intl.NumberFormat("en-IN", {
+        style: "currency",
+        currency: "INR",
+        maximumFractionDigits: 0,
+      }).format(gemstone.price)
+    : "Price on Enquiry";
 
   const handleAddToCart = () => {
     addToCart(gemstone, quantity);
@@ -131,6 +133,8 @@ export default function ProductDetailClient({ gemstone }: ProductDetailClientPro
                     src={getImagePath(img)}
                     alt={`${gemstone.name} view ${i + 1}`}
                     fill
+                    sizes="80px"
+                    loading="lazy"
                     className="object-cover"
                   />
                 </button>

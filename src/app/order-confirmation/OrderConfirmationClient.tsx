@@ -139,12 +139,14 @@ export default function OrderConfirmationClient() {
 
             <div className="divide-y divide-[#F4EFE6]">
               {order.items.map((item) => {
-                const itemTotal = item.gemstone.price * item.quantity;
-                const formattedItemTotal = new Intl.NumberFormat("en-IN", {
-                  style: "currency",
-                  currency: "INR",
-                  maximumFractionDigits: 0,
-                }).format(itemTotal);
+                const itemTotal = (item.gemstone.price || 0) * item.quantity;
+                const formattedItemTotal = item.gemstone.price && item.gemstone.price > 0
+                  ? new Intl.NumberFormat("en-IN", {
+                      style: "currency",
+                      currency: "INR",
+                      maximumFractionDigits: 0,
+                    }).format(itemTotal)
+                  : "Price on Enquiry";
 
                 return (
                   <div key={item.gemstone.id} className="py-3 flex items-center justify-between gap-4">
@@ -154,6 +156,8 @@ export default function OrderConfirmationClient() {
                           src={getImagePath(item.gemstone.images[0])}
                           alt={item.gemstone.name}
                           fill
+                          sizes="48px"
+                          loading="lazy"
                           className="object-cover"
                         />
                       </div>

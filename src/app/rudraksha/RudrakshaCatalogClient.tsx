@@ -205,12 +205,27 @@ export default function RudrakshaCatalogClient() {
                           src={getImagePath(item.images[0])}
                           alt={item.name}
                           fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          loading="lazy"
+                          className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
                         />
                         <div className="absolute top-3 left-3">
                           <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] uppercase tracking-wider font-semibold bg-white/90 text-[#57534E] backdrop-blur-sm">
                             {item.category}
                           </span>
+                        </div>
+                        <div className="absolute top-3 right-3">
+                          {item.availability === "in_stock" ? (
+                            <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-white/95 text-[#1C1917] backdrop-blur-sm border border-[#E8E2D6] shadow-sm">
+                              <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 mr-1" />
+                              In Stock
+                            </span>
+                          ) : (
+                            <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-[#2C2825]/90 text-white backdrop-blur-sm shadow-sm">
+                              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 mr-1" />
+                              On Request
+                            </span>
+                          )}
                         </div>
                       </div>
 
@@ -230,8 +245,20 @@ export default function RudrakshaCatalogClient() {
                           </p>
                         </div>
 
-                        {/* Actions */}
-                        <div className="pt-3 border-t border-[#F4EFE6] space-y-2">
+                        {/* Price & Actions */}
+                        <div className="pt-3 border-t border-[#F4EFE6] space-y-2.5">
+                          <div className="flex items-baseline justify-between">
+                            <span className="text-xs text-[#78716C] uppercase tracking-wider">Price</span>
+                            {item.price && item.price > 0 ? (
+                              <span className="font-serif text-lg font-bold text-[#1C1917]">
+                                ₹{item.price.toLocaleString("en-IN")}
+                              </span>
+                            ) : (
+                              <span className="text-xs font-semibold text-[#B88E3E] bg-[#F4EFE6] px-2.5 py-0.5 rounded">
+                                Price on enquiry
+                              </span>
+                            )}
+                          </div>
                           <div className="grid grid-cols-2 gap-2">
                             <button
                               type="button"
