@@ -1,0 +1,25 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[[redirects]]
+  from = "/gemapp/*"
+  to = "/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gemapp"
+  to = "/"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"

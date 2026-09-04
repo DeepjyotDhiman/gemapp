@@ -1,14 +1,18 @@
 import type { NextConfig } from "next";
 
-const basePath = "/gemapp";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const nextConfig: NextConfig = {
   output: "export",
   images: {
     unoptimized: true,
   },
-  basePath,
-  assetPrefix: `${basePath}/`,
+  ...(basePath
+    ? {
+        basePath,
+        assetPrefix: `${basePath}/`,
+      }
+    : {}),
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
